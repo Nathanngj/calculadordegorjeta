@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono", monospace;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: bisque;
+    gap: 4rem;
+
+}
+
+.title{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+
+.card{
+    background-color: white;
+    width: 700px;
+    border-radius: 1rem;
+}
+
+.card-container{
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.inputs-section,.outputs-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.outputs-section{
+    background-color: rgb(4, 122, 122) ;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.bill-sec,.tip-sec,.people-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputs-section{
+    gap: 2rem;
+}
+
+label{
+    color: rgb(48, 99, 99);
+    font-size: 15px;
+}
+
+.bill-input,.people-input{
+    position: relative;
+}
+
+.bill-input input,.people-input input{
+    width: 90%;
+    text-align: right;
+    padding: .5rem;
+    border: none;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(212, 219, 231);
+    outline-color: black;
+    border-radius: 7px;
+}
+
+.bill-input img,.people-input img{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%,-50%);
+}
+
+.tip-btns{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.tip-btns button{
+    width: 90px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(110, 88, 88);
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.tip-btns button:hover{
+    background-color: rgb(55, 71, 47);
+    color: rgb(56, 241, 0);
+}
+
+.selected{
+    background-color: rgb(143, 150, 158) !important;
+    color: blue !important;
+}
+
+.tip-btns input{
+    width: 90px;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(212, 219, 231);
+    border-radius: 7px;
+    outline-color: black;
+}
+
+.outputs-section{
+    gap: 2rem;
+}
+
+.tip-amount,.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tip-amount h2,.total h2{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.tip-amount span,.total span{
+    font-size: 14px;
+    color: beige;
+}
+
+.reset-btn{
+    margin-top: auto;
+    padding: .5rem;
+    text-transform: uppercase;
+    background-color: rgb(212, 219, 231);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: black;
+    opacity: 40%;
+}
+
+.reset-btn:hover{
+    opacity: 100%;
+}
+
+
+
